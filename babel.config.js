@@ -1,7 +1,7 @@
 //项目分布阶段需要用到的babel插件
-const prodPlugins = ['transform-remove-console']
+const prodPlugins = []
 if (process.env.NODE_ENV === 'production') {
-    prodPlugins.push('')
+    prodPlugins.push('transform-remove-console')
 }
 module.exports = {
     presets: [
